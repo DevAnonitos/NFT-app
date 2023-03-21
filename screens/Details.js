@@ -5,7 +5,7 @@ const Details = () => {
   return (
     <>
         <Text>
-            Details
+          Details
         </Text>
     </>
   );
