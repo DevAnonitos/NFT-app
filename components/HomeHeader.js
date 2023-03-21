@@ -1,8 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { View, Text, Image, TextInput } from "react-native";
+
+import { COLORS, FONTS, SIZES, assets } from "../constants";
 
 const HomeHeader = () => {
     return (
-        <div>HomeHeader</div>
+        <View
+            style={{
+                backgroundColor: COLORS.primary,
+                padding: SIZES.font
+            }}
+        >
+            HomeHeader
+        </View>
     )
 };
 
