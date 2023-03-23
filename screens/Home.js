@@ -14,7 +14,7 @@ const Home = () => {
             <FlatList
               data={NFTData}
               renderItem={({ item }) =>
-               <NFTCard data={item} />
+                <NFTCard data={item} />
               }
               keyExtractor={(item) => item.id}
               showsHorizontalScrollIndicator={false}
