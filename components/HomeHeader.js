@@ -11,7 +11,9 @@ const HomeHeader = () => {
                 padding: SIZES.font
             }}
         >
-            HomeHeader
+            <Text style={{ color: "#fff" }}>
+                HomeHeader
+            </Text>
         </View>
     )
 };
