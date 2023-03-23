@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigation } from "@react-navigation/native";
 import { View, Text, Image } from 'react-native';
 import { CircleButton } from './Button';
+import { SubInfo, EthPrice, NFTTitle } from './SubInfo';
 
 import { COLORS, SIZES, SHADOWS, assets } from "../constants";
 
@@ -42,6 +43,8 @@ const NFTCard = ({ data }) => {
                         top={10}
                     />
                 </View>
+
+                <SubInfo />
             </View>
         </>
     );

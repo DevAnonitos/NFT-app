@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Image } from 'react-native';
+import { SIZES, FONTS, COLORS, SHADOWS, assets } from "../constants";
 
 export const NFTTitle = () => {
     return (
@@ -17,18 +18,38 @@ export const EthPrice = () => {
     );
 };
 
-export const ImageCmp = () => {
+export const ImageCmp = ({ imgUrl, index }) => {
     return (
-        <View>
-            <Text>ImageCmp</Text>
-        </View>
+        <>
+            <Image
+                source={imgUrl}
+                resizeMode='contain'
+                style={{
+                    width: 48,
+                    heigh: 48,
+                    marginLeft: index === 0 ? 0 : -SIZES.font,
+                }}
+            />.
+        </>
     );
 };
 
 export const People = () => {
     return (
-        <View>
-            <Text>People</Text>
+        <View
+            style={{flexDirection: 'row'}}
+        >
+            {[
+                assets.person02,
+                assets.person03,
+                assets.person04
+            ].map((imgUrl, index) => (
+                <ImageCmp
+                    imgUrl={imgUrl}
+                    index={index}
+                    key={`People-${index}`}
+                />
+            ))}
         </View>
     );
 };
@@ -43,8 +64,17 @@ export const EndDate = () => {
 
 export const SubInfo = () => {
     return (
-        <View>
-            <Text>SubInfo</Text>
+        <View
+            style={{
+                width: '100%',
+                paddingHorizontal: SIZES.font,
+                marginTop: -SIZES.extraLarge,
+                flexDirection: 'row',
+                justifyContent: 'space-between'
+            }}
+        >
+            <People />
+            <EndDate />
         </View>
-    )
+    );
 };
