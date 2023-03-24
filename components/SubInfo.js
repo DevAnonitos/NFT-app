@@ -50,8 +50,38 @@ export const People = () => {
 
 export const EndDate = () => {
     return (
-        <View>
-            <Text>EndDate</Text>
+        <View
+            style={{
+                paddingHorizontal:  SIZES.font,
+                paddingVertical: SIZES.base,
+                backgroundColor:  COLORS.white,
+                justifyContent: 'center',
+                alignItems: 'center',
+                ...SHADOWS.light,
+                elevation: 1,
+                maxWidth: '50%',
+                borderTopLeftRadius: SIZES.font,
+                borderTopRightRadius: SIZES.font,
+            }}
+        >
+            <Text
+                style={{
+                    fontFamily: FONTS.regular,
+                    fontSize: SIZES.small,
+                    color: COLORS.primary,
+                }}
+            >
+                EndDate
+            </Text>
+            <Text
+                style={{
+                    fontFamily: FONTS.bold,
+                    fontSize: SIZES.medium,
+                    color: COLORS.primary,
+                }}
+            >
+                12h 30m
+            </Text>
         </View>
     );
 };
