@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { useNavigation } from "@react-navigation/native";
 import { View, Text, Image } from 'react-native';
-import { CircleButton } from './Button';
+import { CircleButton, RectButton } from './Button';
 import { SubInfo, EthPrice, NFTTitle } from './SubInfo';
 
 import { COLORS, SIZES, SHADOWS, assets } from "../constants";
 
 const NFTCard = ({ data }) => {
-
 
     return (
         <>
@@ -58,10 +57,25 @@ const NFTCard = ({ data }) => {
                         titleSize={SIZES.large}
                         subTitleSize={SIZES.small}
                     />
+
+                    <View
+                        style={{
+                            marginTop: SIZES.font,
+                            flexDirection: 'row',
+                            justifyContent:  'space-between',
+                            alignItems:  'center',
+                        }}
+                    >
+                        <EthPrice
+                            price={data.price}
+                        />
+                        <RectButton />
+
+                    </View>
                 </View>
             </View>
         </>
     );
 };
 
-export default NFTCard
+export default NFTCard;
