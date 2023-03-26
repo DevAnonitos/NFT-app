@@ -4,6 +4,7 @@ import eth from "../assets/icons/eth.png";
 import heart from "../assets/icons/heart.png";
 import left from "../assets/icons/left.png";
 import search from "../assets/icons/search.png";
+import rocket from "../assets/icons/rocket.gif";
 
 // Image Logos
 import logo from "../assets/images/logo.png";
@@ -27,6 +28,7 @@ export default {
     heart,
     left,
     search,
+    rocket,
 
     logo,
     nft01,
