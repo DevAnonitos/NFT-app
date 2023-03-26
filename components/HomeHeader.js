@@ -115,7 +115,7 @@ const HomeHeader = ({ onSearch }) => {
                                 outlineStyle: "none",
                                 color: COLORS.secondary,
                             }}
-                            onChangeText={() => {onSearch}}
+                            onChangeText={onSearch}
                         />
                     </View>
                 </View>
