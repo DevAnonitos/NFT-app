@@ -63,10 +63,19 @@ const Details = ({ route, navigation }) => {
         }}
         ListHeaderComponent={() => (
           <React.Fragment>
-            <DetailsHeader data={data} navigation={navigation} />
+            <DetailsHeader
+              data={data}
+              navigation={navigation}
+            />
             <SubInfo />
-            <View style={{ padding: SIZES.font }}>
-              <DetailsDesc data={data} />
+            <View
+              style={{
+                padding: SIZES.font
+              }}
+            >
+              <DetailsDesc
+                data={data}
+              />
 
               {data.bids.length > 0 && (
                 <Text
