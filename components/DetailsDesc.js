@@ -1,8 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { Text, View } from 'react-native';
 
 const DetailsDesc = () => {
     return (
-        <div>DetailsDesc</div>
+        <>
+            <View>
+                <Text>
+                    Dảk
+                </Text>
+            </View>
+        </>
     );
 };
 

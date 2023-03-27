@@ -1,8 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { View, Text } from 'react-native';
 
 const DetailsBid = () => {
     return (
-        <div>DetailsBid</div>
+        <>
+            <View style={{
+
+            }}>
+                <Text>
+                    DetailsBid
+                </Text>
+            </View>
+        </>
     );
 };
 
