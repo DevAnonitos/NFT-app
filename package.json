@@ -20,7 +20,7 @@
     "react-native": "0.70.9",
     "react-native-web": "~0.19.5",
     "react-dom": "18.1.0",
-    "@expo/webpack-config": "^18.0.1"
+    "@expo/webpack-config": "^18.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
