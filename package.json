@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.17",
-    "@react-navigation/stack": "^6.3.28",
+    "@react-navigation/stack": "^6.3.29",
     "react-native-gesture-handler": "~2.15.0",
     "react-native-safe-area-context": "4.9.0",
     "expo-font": "^11.10.3",
