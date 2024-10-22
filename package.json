@@ -23,7 +23,7 @@
     "@expo/webpack-config": "^19.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.7"
+    "@babel/core": "^7.25.8"
   },
   "private": true
 }
